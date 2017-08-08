@@ -1,0 +1,8 @@
+
+<h1><%= (@task.description).capitalize %></h1>
+
+<p>La tache a t elle ete faite ?: <%= (@task.status).upcase %></p>
+
+<%= link_to 'Editer la tache', edit_task_path(@task) %>
+
+<%= link_to 'Retour a la liste', tasks_path %>

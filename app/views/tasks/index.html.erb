@@ -1,0 +1,15 @@
+<h1>Liste des taches</h1>
+
+<%= link_to 'Ajouter une tache', new_task_path %>
+
+
+<% @tasks.each do |task| %>
+  <h3><%= (task.description).capitalize%></h3>
+  <ul>
+    <li><%= task.status %></li>
+  </ul>
+  <%= link_to 'Allez voir la fiche', task_path(task) %>
+  <%= link_to 'Supprimer', task_path(task), method: :delete, data: { confirm: "Are you sure?" } %>
+<% end %>
+
+

@@ -1,0 +1,10 @@
+<h1>Editer une taches</h1>
+
+
+<%= form_for @task do |f| %>
+  <h5>Nouvelle tache</h5>
+  <%= f.text_field :description %>
+  <h5>Status de la tache</h5>
+  <%= f.text_field :status%>
+  <%= f.submit 'Editer la taches' %>
+<% end %>
