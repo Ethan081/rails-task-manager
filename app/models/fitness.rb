@@ -1,2 +1,0 @@
-class Fitness < ApplicationRecord
-end
